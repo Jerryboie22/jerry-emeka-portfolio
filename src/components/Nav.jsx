@@ -29,7 +29,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#top" className="font-mono text-sm text-muted flex items-center gap-2 group">
           <span className="w-2 h-2 rounded-full bg-ok animate-blink" />
-          <span className="group-hover:text-text transition-colors">j7hub.dev</span>
+          <span className="group-hover:text-text transition-colors">Jerry Emeka</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1 font-mono text-sm">

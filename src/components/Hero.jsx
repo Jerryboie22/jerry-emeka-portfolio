@@ -156,7 +156,7 @@ export default function Hero() {
                   <span className="inline-block w-2 h-4 bg-warm ml-0.5 animate-blink align-middle" />
                 )}
               </p>
-              <p className="text-muted mt-1">Host: j7hub.com</p>
+              <p className="text-muted mt-1">Host: jerry-emeka</p>
 
               {showResponse && (
                 <div className="mt-5 pt-5 border-t border-line/60">

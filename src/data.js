@@ -296,70 +296,88 @@ export const projects = [
     ],
   },
   {
-    endpoint: "GET /projects/j7hub",
-    name: "j7hub.com — WordPress Blog & Business Website",
-    client: "j7hub (own brand)",
-    role: "Full-Stack / SEO",
-    stack: ["WordPress", "Elementor", "PHP", "CSS", "HTML", "SEO"],
-    live: "https://j7hub.com",
-    problem: "Needed a business site and blog that could carry both brand presence and organic search traffic from day one.",
-    solution: "Built the full site structure, responsive layout, and UI/UX, then wrote and managed blog content and SEO configuration (metadata, indexing, sitemap).",
-    result: "A single site handling both credibility and organic discovery, without needing a separate blog platform.",
-    points: [
-      "Built full website structure, responsive layout, and UI/UX",
-      "Wrote and managed blog content for SEO and engagement",
-      "Configured SEO settings, metadata, indexing, and sitemap",
-    ],
-  },
+    
   {
-    endpoint: "GET /projects/moshapparels",
-    name: "Moshapparels.com — E-commerce Store",
-    client: "Mosh Apparels",
-    role: "Shopify Developer",
-    stack: ["Shopify", "Liquid", "CSS", "HTML", "WooCommerce", "SEO"],
-    live: "https://moshapparels.com",
-    problem: "Needed a full Shopify storefront built from the ground up — theme, product pages, checkout UX, and payment integration.",
-    solution: "Developed the store structure and customized theme, built product pages and custom sections, optimized checkout UX, and integrated payment gateways with SEO best practices applied throughout.",
-    result: "A complete, launch-ready Shopify store with SEO foundations in place rather than retrofitted later.",
-    points: [
-      "Developed Shopify store structure and customized theme",
-      "Created product pages, custom sections, and optimized checkout UX",
-      "Integrated payment gateways and implemented SEO best practices",
-    ],
-  },
-  {
-    endpoint: "GET /projects/ogrcs",
-    name: "OGRCS.com — WordPress Website Rebuild",
-    client: "OGRCS",
-    role: "Full-Stack / SEO",
-    stack: ["WordPress", "Elementor", "PHP", "CSS", "HTML", "SEO"],
-    live: "https://ogrcs.com",
-    problem: "The existing site needed a full layout rebuild along with SEO and performance work that hadn't been addressed.",
-    solution: "Rebuilt the website layout and responsive UI/UX, implemented SEO improvements, indexing setup, and sitemap configuration, and optimized page speed.",
-    result: "A faster, better-structured site with SEO fundamentals correctly configured.",
-    points: [
-      "Rebuilt website layout and responsive UI/UX",
-      "Implemented SEO improvements, indexing setup, and sitemap configuration",
-      "Optimized website performance and page speed",
-    ],
-  },
-  {
-    endpoint: "GET /projects/salem-schools",
-    name: "Salem Group of Schools — Website Modernization",
-    client: "Salem Group of Schools",
-    role: "Full-Stack Developer",
-    stack: ["WordPress", "Elementor", "PHP", "CSS", "HTML"],
-    live: "https://salemgroupofschools.com",
-    problem: "The school's site needed a full navigation and layout redesign that worked reliably on mobile for parents and prospective students.",
-    solution: "Redesigned the website layout and navigation for responsive UI/UX, integrated CMS features for easy content updates, and ensured mobile-friendly, fast-loading pages.",
-    result: "A modernized site the school's staff can update themselves without developer involvement.",
-    points: [
-      "Redesigned website layout and navigation for responsive UI/UX",
-      "Integrated CMS features for easy content updates",
-      "Ensured mobile-friendly and fast-loading pages",
-    ],
-  },
-];
+  endpoint: "GET /projects/moshapparels",
+
+  name: "MoshApparels.com — Custom E-commerce Platform",
+
+  client: "Mosh Apparels",
+
+  role: "Full-Stack / E-commerce Developer",
+
+  stack: ["Lovable", "React", "TypeScript", "Tailwind CSS", "Supabase", "Git", "GitHub", "SEO"],
+
+  live: "https://moshapparels.com",
+
+  problem: "Needed a modern fashion e-commerce platform with a strong visual experience, responsive shopping interface, and a scalable foundation for the brand's online store.",
+
+  solution: "Designed and developed the platform from the ground up using Lovable, React, TypeScript, Tailwind CSS, and Supabase. Built the storefront, product experience, responsive layouts, and core e-commerce functionality, with the project managed through Git and GitHub.",
+
+  result: "A custom-built, responsive e-commerce platform tailored to the brand, with a modern shopping experience and a scalable technical foundation.",
+
+  points: [
+    "Built the e-commerce platform from the ground up using Lovable, React, TypeScript, and Tailwind CSS",
+    "Developed responsive storefront layouts, product experiences, and custom UI components",
+    "Integrated Supabase for backend services and data management",
+    "Managed source code and development workflow using Git and GitHub",
+    "Applied SEO best practices to improve the site's search visibility"
+  ],
+},
+
+{
+  endpoint: "GET /projects/ogrcs",
+
+  name: "OGRCS.com — WordPress Website Rebuild",
+
+  client: "OGRCS",
+
+  role: "Full-Stack / WordPress Developer",
+
+  stack: ["WordPress", "Elementor", "PHP", "CSS", "HTML", "SEO"],
+
+  live: "https://ogrcs.com",
+
+  problem: "The existing website needed a complete visual and structural rebuild, along with improvements to its SEO, performance, and overall user experience.",
+
+  solution: "Rebuilt the website structure and responsive UI/UX, improved navigation and page layouts, implemented SEO and indexing configurations, configured the sitemap, and optimized website performance and page speed.",
+
+  result: "A modern, better-structured, and faster website with a stronger user experience and properly configured SEO foundations.",
+
+  points: [
+    "Rebuilt the website structure, layout, and responsive UI/UX",
+    "Improved navigation and user experience across desktop and mobile",
+    "Implemented SEO, indexing, metadata, and sitemap configurations",
+    "Optimized website performance and page speed"
+  ],
+},
+
+{
+  endpoint: "GET /projects/salem-schools",
+
+  name: "Salem Group of Schools — Website Modernization",
+
+  client: "Salem Group of Schools",
+
+  role: "Full-Stack / WordPress Developer",
+
+  stack: ["WordPress", "Elementor", "PHP", "CSS", "HTML", "SEO"],
+
+  live: "https://salemgroupofschools.com",
+
+  problem: "The school needed a modern website experience with clearer navigation, responsive layouts, and an easy way for staff to manage and update content.",
+
+  solution: "Modernized the website structure, redesigned the navigation and responsive UI/UX, implemented CMS functionality for content management, and optimized the experience for mobile devices and performance.",
+
+  result: "A modern, responsive school website that provides a better experience for parents and prospective students while allowing staff to manage content without relying on a developer for everyday updates.",
+
+  points: [
+    "Modernized the website structure, navigation, and responsive UI/UX",
+    "Built and customized WordPress pages and content management features",
+    "Optimized the website for mobile usability and performance",
+    "Made it easier for school staff to manage and update website content"
+  ],
+},
 
 export const education = {
   school: "Federal University of Technology, Owerri (FUTO)",
