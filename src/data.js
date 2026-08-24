@@ -590,6 +590,29 @@ export const projects = [
   },
 
   {
+    endpoint: "GET /projects/farm-funding",
+    name: "Farm Funding — Ag-Lending Marketing Site",
+    client: "Farm Funding",
+    role: "Full-Stack Developer (Next.js)",
+    status: "In Progress",
+    stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    live: "https://farm-funding.vercel.app",
+    screenshot: "/projects/farm-funding-home.jpg",
+    problem:
+      "The client needs an agricultural-lending marketing site with the nav depth, hero, blog, and calculator structure of an established ag-lending brand, but with its own visual identity and content.",
+    solution:
+      "Building the site in Next.js and Tailwind CSS v4, including a working loan payment calculator, a \"Today's Harvest\" blog with article pages built from a shared, reusable page template, and a full brand system (custom color palette, type pairing, locked placeholder imagery).",
+    result:
+      "A structured, reusable article template is already letting new blog content ship consistently without rebuilding page layout each time, ahead of full launch.",
+    points: [
+      "Building a working loan payment calculator with live input handling",
+      "Established a shared article page template (hero, image-wrap, body, tags, author-share, related articles, newsletter) reused across all blog posts",
+      "Defined a full brand system: color palette, Baloo 2 / Open Sans / IBM Plex Mono type pairing, and consistent locked placeholder imagery",
+      "Structuring the site around an ag-lending layout pattern (nav depth, hero, promo cards, blog grid, industry trends, newsletter) with original branding",
+    ],
+  },
+
+  {
     endpoint: "GET /projects/ogrcs",
     name: "OGRCS.com — WordPress Website Rebuild",
     client: "OGRCS",

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown, ExternalLink, PlayCircle } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projects } from "../data";
 
@@ -20,7 +20,14 @@ function ProjectCard({ project, index }) {
         className="w-full text-left p-6 flex items-start justify-between gap-4"
       >
         <div>
-          <p className="font-mono text-xs text-blue mb-2">{project.endpoint}</p>
+          <div className="flex items-center gap-2 mb-2">
+            <p className="font-mono text-xs text-blue">{project.endpoint}</p>
+            {project.status && (
+              <span className="font-mono text-[10px] uppercase tracking-wider text-warm border border-warm/40 rounded px-1.5 py-0.5">
+                {project.status}
+              </span>
+            )}
+          </div>
           <h3 className="font-display font-semibold text-lg mb-1">{project.name}</h3>
           <p className="text-sm text-muted mb-1">{project.role}</p>
           {project.client && (
@@ -97,6 +104,16 @@ function ProjectCard({ project, index }) {
                 Live Demo <ExternalLink size={14} />
               </a>
             )}
+            {project.video && (
+              <a
+                href={project.video}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-1.5 text-sm text-violet font-mono hover:underline"
+              >
+                Watch Video <PlayCircle size={14} />
+              </a>
+            )}
             <a
               href="#"
               onClick={(e) => e.preventDefault()}
@@ -135,7 +152,7 @@ export default function Projects() {
           Selected work
         </motion.h2>
         <p className="text-muted mb-12 max-w-xl">
-          Nine shipped projects across REST APIs, Android apps, WordPress
+          Ten shipped projects across REST APIs, Android apps, WordPress
           plugins, and e-commerce storefronts. Tap any card for the problem,
           solution, and result.
         </p>
