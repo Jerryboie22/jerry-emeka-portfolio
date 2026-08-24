@@ -26,10 +26,13 @@ export default function Nav() {
         scrolled ? "glass shadow-premium" : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#top" className="font-mono text-sm text-muted flex items-center gap-2 group">
+      <div className="relative max-w-6xl mx-auto px-6 py-4 flex items-center justify-end">
+        <a
+          href="#top"
+          className="absolute left-1/2 -translate-x-1/2 font-display text-lg md:text-xl font-bold text-text flex items-center gap-2 group"
+        >
           <span className="w-2 h-2 rounded-full bg-ok animate-blink" />
-          <span className="group-hover:text-text transition-colors">Jerry Emeka</span>
+          <span className="group-hover:opacity-80 transition-opacity">Jerry Emeka</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-1 font-mono text-sm">

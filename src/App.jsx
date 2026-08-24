@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import ViewCounter from "./components/ViewCounter";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
@@ -24,6 +25,7 @@ export default function App() {
         Skip to content
       </a>
       <Nav />
+      <ViewCounter />
       <main id="main-content">
         <Hero />
         <About />
