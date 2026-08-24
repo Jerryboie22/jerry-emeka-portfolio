@@ -24,8 +24,8 @@ export default function Process() {
         </motion.h2>
 
         <div className="relative">
-          <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-blue/50 via-violet/50 to-transparent" />
-          <div className="grid md:grid-cols-7 gap-6">
+          <div className="hidden lg:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-blue/50 via-violet/50 to-transparent" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-x-6 gap-y-10">
             {process.map((p, i) => (
               <motion.div
                 key={p.step}

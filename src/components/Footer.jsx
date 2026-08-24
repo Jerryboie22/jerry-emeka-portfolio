@@ -26,14 +26,14 @@ export default function Footer() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="text-muted hover:text-text transition-colors">
+        <div className="flex items-center gap-1">
+          <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="p-2 text-muted hover:text-text transition-colors">
             <GithubIcon size={16} />
           </a>
-          <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-muted hover:text-text transition-colors">
+          <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2 text-muted hover:text-text transition-colors">
             <LinkedinIcon size={16} />
           </a>
-          <a href={`mailto:${profile.email}`} aria-label="Email" className="text-muted hover:text-text transition-colors">
+          <a href={`mailto:${profile.email}`} aria-label="Email" className="p-2 text-muted hover:text-text transition-colors">
             <Mail size={16} />
           </a>
         </div>

@@ -46,7 +46,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen flex items-center bg-grid mesh-bg pt-32 pb-16 overflow-hidden"
+      className="relative min-h-[100dvh] flex items-center bg-grid mesh-bg pt-28 sm:pt-32 pb-12 sm:pb-16 overflow-hidden"
     >
       <div className="absolute -top-40 -right-40 w-[32rem] h-[32rem] bg-blue/20 rounded-full blur-3xl animate-driftSlow" />
       <div className="absolute -bottom-40 -left-40 w-[32rem] h-[32rem] bg-violet/20 rounded-full blur-3xl animate-driftSlow [animation-delay:4s]" />
@@ -63,7 +63,7 @@ export default function Hero() {
           </div>
 
           <p className="font-mono text-sm gradient-text mb-4">// full-stack developer, seo &amp; digital growth</p>
-          <h1 className="font-display text-5xl md:text-6xl font-bold leading-[1.05] mb-6">
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] sm:leading-[1.05] mb-6">
             High-performance
             <br />
             websites &amp; apps

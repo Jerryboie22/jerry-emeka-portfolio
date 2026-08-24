@@ -83,7 +83,7 @@ export default function Contact() {
           ))}
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {cards.map((c, i) => {
             const Icon = c.icon;
             return (

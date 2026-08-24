@@ -86,7 +86,7 @@ export default function Nav() {
         </nav>
 
         <button
-          className="md:hidden text-text"
+          className="md:hidden text-text p-2 -mr-2 rounded-lg hover:bg-white/5 transition-colors"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -102,19 +102,19 @@ export default function Nav() {
               href={`#${l.label.toLowerCase()}`}
               aria-label={l.label}
               onClick={() => setOpen(false)}
-              className="py-2 text-muted hover:text-text"
+              className="py-3 text-muted hover:text-text"
             >
               {l.path}
             </a>
           ))}
-          <div className="flex items-center gap-3 pt-3 mt-2 border-t border-line">
-            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="text-muted hover:text-text">
+          <div className="flex items-center gap-1 pt-3 mt-2 border-t border-line">
+            <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="p-2.5 text-muted hover:text-text">
               <GithubIcon size={18} />
             </a>
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="text-muted hover:text-text">
+            <a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2.5 text-muted hover:text-text">
               <LinkedinIcon size={18} />
             </a>
-            <a href={`mailto:${profile.email}`} aria-label="Email" className="text-muted hover:text-text">
+            <a href={`mailto:${profile.email}`} aria-label="Email" className="p-2.5 text-muted hover:text-text">
               <Mail size={18} />
             </a>
           </div>
