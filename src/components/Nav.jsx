@@ -23,31 +23,33 @@ export default function Nav() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass shadow-premium" : "bg-transparent border-b border-transparent"
+        scrolled || open ? "nav-solid shadow-premium" : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="relative max-w-6xl mx-auto px-6 py-4 flex items-center justify-end">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between md:grid md:grid-cols-[auto_1fr_auto] md:gap-3">
         <a
           href="#top"
-          className="absolute left-1/2 -translate-x-1/2 font-display text-lg md:text-xl font-bold text-text flex items-center gap-2 group"
+          className="font-display text-base sm:text-lg md:text-xl font-bold text-text flex items-center gap-2 group whitespace-nowrap"
         >
-          <span className="w-2 h-2 rounded-full bg-ok animate-blink" />
+          <span className="w-2 h-2 rounded-full bg-ok animate-blink flex-shrink-0" />
           <span className="group-hover:opacity-80 transition-opacity">Jerry Emeka</span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-1 font-mono text-sm">
+        <nav className="hidden md:flex items-center justify-center gap-1 font-mono text-sm">
           {links.map((l) => (
             <a
               key={l.path}
               href={`#${l.label.toLowerCase()}`}
               aria-label={l.label}
-              className="px-3 py-1.5 rounded-lg text-muted hover:text-text hover:bg-white/5 transition-colors"
+              className="px-3 py-1.5 rounded-lg text-muted hover:text-text hover:bg-white/5 transition-colors whitespace-nowrap"
             >
-              {l.path}
+              {l.label}
             </a>
           ))}
+        </nav>
 
-          <div className="flex items-center gap-1 ml-2 pl-3 border-l border-line">
+        <div className="hidden md:flex items-center justify-end gap-1 font-mono text-sm">
+          <div className="flex items-center gap-1 pr-3 border-r border-line">
             <a
               href={profile.github}
               target="_blank"
@@ -79,14 +81,14 @@ export default function Nav() {
 
           <a
             href="#contact"
-            className="ml-2 px-4 py-1.5 rounded-lg bg-gradient-to-r from-blue to-violet text-white font-semibold hover:opacity-90 transition-opacity shadow-glow"
+            className="ml-2 px-4 py-1.5 rounded-lg bg-gradient-to-r from-blue to-violet text-white font-semibold hover:opacity-90 transition-opacity shadow-glow whitespace-nowrap"
           >
             Hire me
           </a>
-        </nav>
+        </div>
 
         <button
-          className="md:hidden text-text p-2 -mr-2 rounded-lg hover:bg-white/5 transition-colors"
+          className="md:hidden text-text p-2 rounded-lg hover:bg-white/5 transition-colors flex-shrink-0"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -95,16 +97,16 @@ export default function Nav() {
       </div>
 
       {open && (
-        <nav className="md:hidden glass-strong border-t border-line px-6 py-4 flex flex-col gap-1 font-mono text-sm">
+        <nav className="md:hidden nav-solid border-t border-line px-6 py-4 flex flex-col gap-1 font-mono text-sm">
           {links.map((l) => (
             <a
               key={l.path}
               href={`#${l.label.toLowerCase()}`}
               aria-label={l.label}
               onClick={() => setOpen(false)}
-              className="py-3 text-muted hover:text-text"
+              className="py-3 text-muted hover:text-text border-b border-line/50 last:border-b-0"
             >
-              {l.path}
+              {l.label}
             </a>
           ))}
           <div className="flex items-center gap-1 pt-3 mt-2 border-t border-line">

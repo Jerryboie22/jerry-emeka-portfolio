@@ -65,6 +65,13 @@ button:focus-visible {
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+.nav-solid {
+  background: linear-gradient(180deg, rgba(15,21,38,0.97), rgba(11,16,29,0.96));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
 .gradient-text {
   background: linear-gradient(90deg, #3B82F6, #8B5CF6);
   -webkit-background-clip: text;
